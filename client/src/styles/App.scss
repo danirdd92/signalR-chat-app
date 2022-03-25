@@ -1,0 +1,62 @@
+@use 'bootstrap/dist/css/bootstrap.min.css';
+
+.app-container {
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	height: 80vh;
+	width: 50%;
+	margin-inline: auto;
+	margin-top: 5rem;
+	background-color: #fcfcfa;
+	font-family: Roboto, sans-serif, Arial;
+}
+
+.mx-auto {
+	display: flex;
+	margin-inline: auto;
+}
+
+.login-card {
+	width: 20rem;
+}
+
+.chat-wrapper {
+	display: grid;
+	padding: 1.5rem;
+	grid-template-rows: 11fr 1fr;
+	direction: co;
+	outline: 0.5rem ridge #3f3cfdca;
+	background-color: rgb(217, 236, 255);
+}
+
+.message-container {
+	height: 95%;
+	background-color: #fff;
+	overflow: auto;
+	padding: 2rem;
+	border-radius: 5px;
+	margin-bottom: 2px;
+}
+
+.message {
+	display: inline-flex;
+	margin: 0px auto 0px auto;
+	padding: 5px;
+	font-size: 18px;
+	color: white;
+	border-radius: 20px;
+	margin-top: 3px;
+}
+
+.user-message {
+	text-align: right;
+	padding-right: 5px;
+	font-size: 18px;
+}
+
+.from-user {
+	font-size: small;
+	margin-bottom: 3px;
+	margin-right: 5px;
+}
