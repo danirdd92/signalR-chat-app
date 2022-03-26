@@ -1,8 +1,4 @@
 ﻿namespace ChatApp.Server.SignalR
 {
-    public class UserConnection
-    {
-        public string? User { get; set; }
-        public string? Channel { get; set; }
-    }
+    public record UserConnection(string User, string Channel);
 }

@@ -10,7 +10,7 @@ const App = () => {
 
 	const connectToChannel = async (user: string, channel: string) => {
 		try {
-			const connection = new HubConnectionBuilder().withUrl(`https://localhost:7270/chat`).configureLogging(LogLevel.Information).build();
+			const connection = new HubConnectionBuilder().withUrl('https://localhost:7270/chat').configureLogging(LogLevel.Information).build();
 
 			connection.on('ReceiveMessage', (user, message) => {
 				setMessages((messages) => [...messages, { user, message }]);
